@@ -1,0 +1,147 @@
+@import "__variables";
+
+header {
+	position: relative;
+	background-color: #fff;
+	z-index: 1;
+	display: flex;
+	min-height: 160px;
+
+	@media screen and (max-width: 769px) {
+		display: block;
+	}
+
+	@media screen and (max-width: 1013px) {
+		padding: 25px 15px;
+	}
+	.nav-container {
+		margin: 0 auto;
+		display: flex;
+		width: 1100px;
+		max-width: 100%;
+		font-family: "Roboto", sans-serif;
+
+		@media screen and (max-width: 1013px) {
+			display: block;
+		}
+	}
+	.flags {
+		display: flex;
+		justify-content: end;
+		ul {
+			display: flex;
+			list-style: none;
+
+			li {
+				margin: 5px;
+				padding: 0;
+
+				img {
+					max-width: 28px;
+				}
+			}
+		}
+	}
+
+	.logos-box {
+		width: 950px;
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-basis: fit-content;
+		a {
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+
+		img {
+			max-width: 170px;
+		}
+	}
+
+	nav {
+		position: relative;
+		width: 950px;
+		max-width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		transition: all 0.3s;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-basis: max-content;
+
+		@media screen and (max-width: 769px) {
+			margin-top: 0;
+			max-height: 0;
+		}
+
+		&.active {
+			max-height: 336px;
+		}
+
+		ul {
+			& > li:last-child {
+				padding-right: 0;
+			}
+			display: flex;
+			list-style: none;
+			justify-content: space-around;
+			padding: 0;
+			margin-bottom: 10px;
+
+			@media screen and (max-width: 585px) {
+				justify-content: space-between;
+			}
+
+			@media screen and (max-width: 769px) {
+				flex-direction: column;
+			}
+
+			li {
+				padding: 5px 15px;
+				border-radius: 8px;
+				font-weight: 550;
+				font-size: 1rem;
+				width: fit-content;
+				text-transform: uppercase;
+
+				@media screen and (max-width: 769px) {
+					padding: 0px 15px;
+				}
+
+				&.active {
+					a {
+						color: #e52520;
+						font-weight: 700;
+
+						&:hover {
+							color: #e52520;
+						}
+					}
+				}
+				&:hover {
+					opacity: 0.6;
+				}
+
+				a {
+					color: #e52520;
+
+					&:hover {
+						text-decoration: none;
+						color: #e52520;
+						opacity: 0.8;
+					}
+				}
+
+				@media screen and (max-width: 769px) {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}

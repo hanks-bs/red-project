@@ -1,0 +1,21 @@
+section#button-sec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	div {
+		display: flex;
+		align-items: center;
+	}
+
+	.btn-custom {
+		margin: 0;
+		text-align: center;
+		border: 0;
+
+		img {
+			width: 30px;
+			margin-left: 20px;
+		}
+	}
+}

@@ -1,0 +1,161 @@
+@import "__variables";
+
+.heading-box {
+	margin-bottom: 25px;
+	padding: 25px;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #e52822;
+	}
+
+	p {
+		margin: 0;
+		margin-top: 10px;
+		font-size: 1rem;
+	}
+}
+
+section#calc-btw {
+	background-color: #eaeaea;
+
+	.container {
+		display: block;
+		width: 750px;
+	}
+
+	.con {
+		padding: 15px 0;
+		width: 100%;
+
+		h3 {
+			margin: 0;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+			color: #969696;
+			font-size: 1rem;
+		}
+		.result {
+			display: flex;
+			justify-content: space-around;
+
+			@media only screen and (max-width: 725px) {
+				flex-direction: column;
+				justify-content: center;
+			}
+			& > div {
+				background-color: inherit;
+				display: flex;
+				flex-direction: column;
+				margin: 0 15px;
+
+				@media only screen and (max-width: 725px) {
+					margin: 15px auto;
+				}
+				h4 {
+					background-color: #e52320;
+					padding: 30px 50px;
+					color: #fff;
+					font-size: 1.3rem;
+					font-weight: 550;
+					border-radius: 50%;
+					width: fit-content;
+				}
+
+				h5 {
+					margin: 0;
+					color: #e52320;
+					font-size: 1.1rem;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.form-con {
+			display: flex;
+			flex-direction: column;
+			max-width: 100%;
+
+			&.percentage,
+			&.btw {
+				& button {
+					&.active {
+						background-color: #e52320;
+						color: #fff;
+					}
+				}
+			}
+
+			.flex-box {
+				display: flex;
+				justify-content: space-around;
+				margin-bottom: 40px;
+				align-items: center;
+
+				@media only screen and (max-width: 725px) {
+					flex-direction: column;
+				}
+
+				input {
+					border: 2px solid #e52320;
+					padding: 5px 0;
+					text-align: center;
+					max-width: 100%;
+					@media only screen and (max-width: 725px) {
+						margin-top: 15px;
+						margin-bottom: 15px;
+					}
+
+					&:focus-visible {
+						outline: none;
+					}
+				}
+
+				&.includes-box {
+					max-width: 100%;
+
+					button {
+						padding: 5px 80px;
+						text-transform: uppercase;
+						max-width: 100%;
+						@media only screen and (max-width: 725px) {
+							margin-top: 15px;
+							margin-bottom: 15px;
+						}
+					}
+				}
+
+				button {
+					max-width: 100%;
+					min-width: 150px;
+					outline: none;
+					color: #e52320;
+					border: 2px solid #e52320;
+					padding: 5px 25px;
+					cursor: pointer;
+					font-weight: 550;
+					@media only screen and (max-width: 725px) {
+						margin-top: 15px;
+						margin-bottom: 15px;
+					}
+
+					&:hover {
+						color: #fff;
+						background-color: #e52320;
+					}
+				}
+			}
+		}
+	}
+}
+
+.btn-custom {
+	width: 455px;
+	margin: 30px auto;
+	margin-bottom: 30px !important;
+}

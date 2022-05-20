@@ -1,0 +1,82 @@
+section#employer {
+	.container {
+		display: block;
+		width: 750px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0 auto;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #e52822;
+		margin-bottom: 25px;
+	}
+
+	.con {
+		.box {
+			width: 450px;
+			max-width: 100%;
+
+			h3 {
+				font-weight: 550;
+				text-align: left;
+				font-size: 1.4rem;
+			}
+
+			p {
+				text-align: left;
+				font-size: 1rem;
+			}
+		}
+
+		.second-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 40px;
+			margin-bottom: 40px;
+
+			@media only screen and (max-width: 533px) {
+				display: block;
+				margin: 0 auto;
+			}
+
+			.photo {
+				@media only screen and (max-width: 533px) {
+					margin: 20px auto;
+				}
+
+				img {
+					width: 150px;
+					max-width: 100%;
+				}
+			}
+
+			.desc {
+				padding-left: 20px;
+				h3 {
+					font-weight: 550;
+					text-align: right;
+					font-size: 1.4rem;
+				}
+
+				p {
+					text-align: right;
+					font-size: 1rem;
+				}
+
+				@media only screen and (max-width: 533px) {
+					p,
+					h3 {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+
+	.btn-custom {
+		width: 416px;
+		margin: 0 auto;
+	}
+}
