@@ -11,7 +11,6 @@ const calc = async (
 			? stake - without_vat
 			: stake * (percentage / 100);
 		const with_vat = without_vat + vat_value;
-		console.log(((Math.floor(without_vat * 100) / 100) * hours).toFixed(2));
 		resolve({
 			without_vat: parseFloat(
 				((Math.floor(without_vat * 100) / 100) * hours).toFixed(2)
