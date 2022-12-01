@@ -7,8 +7,8 @@ require './phpmailer/src/PHPMailer.php';
 require './phpmailer/src/SMTP.php';
 
 //CONFIG
-$smtpUsername = "formularz@redprojectsbemiddeling.nl";
-$smtpPassword = '412uq0aiaj*z';
+$smtpUsername = "email@domain.com";
+$smtpPassword = '123456';
 
 $user_message = "Complete";
 
@@ -28,7 +28,7 @@ $messageToSend = "<b>Imie i nazwisko:</b> $fullname <br>"
     ."<b>Wiadomość:</b> $message";
 
 
-$emailFrom = 'formularz@redprojectsbemiddeling.nl';
+$emailFrom = 'emailFrom@domain.com';
 $emailFromName = $fullname;
 
 
